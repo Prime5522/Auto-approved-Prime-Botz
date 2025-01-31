@@ -36,7 +36,6 @@ async def get_fsub(bot, message):
         await message.reply_photo(
             photo="https://envs.sh/kuc.jpg",
             caption=(
-                f"{m.from_user.mention},\n\n"
                 "ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ʏᴏᴜ ᴍᴜꜱᴛ ꜰɪʀꜱᴛ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ.\n\n"
                 "ᴄʟɪᴄᴋ ᴏɴ **'✇ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ✇'** ʙᴜᴛᴛᴏɴ.\n"
                 "ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ **'ʀᴇǫᴜᴇꜱᴛ ᴛᴏ ᴊᴏɪɴ'** ʙᴜᴛᴛᴏɴ.\n"
