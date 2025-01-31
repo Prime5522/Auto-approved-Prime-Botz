@@ -94,8 +94,8 @@ async def start_message(c, m):
                 InlineKeyboardButton("• ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ", url="https://telegram.me/Prime_Movies4U"),
                 InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help_menu")
             ],[
-                InlineKeyboardButton("• ᴜᴩᴅᴀᴛᴇꜱ •", url="https://telegram.me/Prime_Botz"),
-                InlineKeyboardButton("• ꜱᴜᴩᴩᴏʀᴛ •", url="https://telegram.me/Prime_Botz_Support")
+                InlineKeyboardButton("• ᴜᴩᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ •", url="https://telegram.me/Prime_Botz"),
+                InlineKeyboardButton("• ꜱᴜᴩᴩᴏʀᴛ ɢʀᴏᴜᴘ •", url="https://telegram.me/Prime_Botz_Support")
             ],[
                 InlineKeyboardButton("✧ 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 ✧", url="https://t.me/Prime_Nayem")
             ],[
