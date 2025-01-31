@@ -26,16 +26,21 @@ async def get_fsub(bot, message):
     except UserNotParticipant:
         # Generate the channel invite link
         channel_link = (await bot.get_chat(target_channel_id)).invite_link
-        join_button = InlineKeyboardButton("🔔 Join Our Channel", url=channel_link)
+        join_button = InlineKeyboardButton("✇ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ✇", url=channel_link)
+        try_again_button = InlineKeyboardButton("🔄 ᴛʀʏ ᴀɢᴀɪɴ", url="https://t.me/Auto_Approved_Prime_Bot?start=start")
 
-        # Display a message encouraging the user to join
-        keyboard = [[join_button]]
-        await message.reply(
-            f"<b>👋 Hello {message.from_user.mention()}, Welcome!</b>\n\n"
-            "📢 <b>Exclusive Access Alert!</b> ✨\n\n"
-            "To unlock all the amazing features I offer, please join our updates channel. "
-            "This helps us keep you informed and ensures top-notch service just for you! 😊\n\n"
-            "<i>🚀 Join now and dive into a world of knowledge and creativity!</i>",
+        # Keyboard setup
+        keyboard = [[join_button], [try_again_button]]
+
+        # Send message with image
+        await message.reply_photo(
+            photo="https://envs.sh/kuc.jpg",
+            caption=(
+                "ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ʏᴏᴜ ᴍᴜꜱᴛ ꜰɪʀꜱᴛ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ.\n\n"
+                "ᴄʟɪᴄᴋ ᴏɴ **'✇ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ✇'** ʙᴜᴛᴛᴏɴ.\n"
+                "ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ **'ʀᴇǫᴜᴇꜱᴛ ᴛᴏ ᴊᴏɪɴ'** ʙᴜᴛᴛᴏɴ.\n"
+                "ᴀꜰᴛᴇʀ ᴊᴏɪɴɪɴɢ, ᴄʟɪᴄᴋ ᴏɴ **'🔄 ᴛʀʏ ᴀɢᴀɪɴ'** ʙᴜᴛᴛᴏɴ."
+            ),
             reply_markup=InlineKeyboardMarkup(keyboard),
         )
         return False
