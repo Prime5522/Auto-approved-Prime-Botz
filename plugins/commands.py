@@ -229,7 +229,7 @@ async def approve_new(client, m):
             )
             
             # Send the photo with the caption and button
-            photo_url = "https://envs.sh/ObN.jpg"  # Replace with your photo URL
+            photo_url = "https://i.postimg.cc/KzvWp2yQ/IMG-20250514-224151-977.jpg"  # Replace with your photo URL
             await client.send_photo(
                 m.from_user.id,
                 photo=photo_url,
