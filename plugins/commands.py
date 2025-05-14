@@ -34,7 +34,7 @@ async def get_fsub(bot, message):
 
         # Send message with image ɪ ᴄᴀɴ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀᴘᴘʀᴏᴠᴇ ɴᴇᴡ ᴀꜱ ᴡᴇʟʟ ᴀꜱ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛꜱ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴏʀ ɢʀᴏᴜᴘꜱ.  ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ɢʀᴏᴜᴘꜱ ᴡɪᴛʜ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴀᴅᴅ ɴᴇᴡ ᴍᴇᴍʙᴇʀꜱ
         await message.reply_photo(
-            photo="https://envs.sh/kuc.jpg",
+            photo="https://i.postimg.cc/7Zpf9s1C/IMG-20250514-223544-954.jpg",
             caption=(
                 "ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ʏᴏᴜ ᴍᴜꜱᴛ ꜰɪʀꜱᴛ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ.\n\n"
                 "ᴄʟɪᴄᴋ ᴏɴ **'✇ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ✇'** ʙᴜᴛᴛᴏɴ.\n"
@@ -80,7 +80,7 @@ async def start_message(c, m):
         return
 
     await m.reply_photo(
-        photo="https://envs.sh/OPl.jpg",  # এখানে আপনার ইমেজ লিংক দিন ɪ ᴄᴀɴ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀᴘᴘʀᴏᴠᴇ ɴᴇᴡ ᴀꜱ ᴡᴇʟʟ ᴀꜱ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛꜱ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴏʀ ɢʀᴏᴜᴘꜱ.  ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ɢʀᴏᴜᴘꜱ ᴡɪᴛʜ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴀᴅᴅ ɴᴇᴡ ᴍᴇᴍʙᴇʀꜱ
+        photo="https://i.postimg.cc/0j8Tsvvz/IMG-20250514-223240-290.jpg",  # এখানে আপনার ইমেজ লিংক দিন ɪ ᴄᴀɴ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀᴘᴘʀᴏᴠᴇ ɴᴇᴡ ᴀꜱ ᴡᴇʟʟ ᴀꜱ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛꜱ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴏʀ ɢʀᴏᴜᴘꜱ.  ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ɢʀᴏᴜᴘꜱ ᴡɪᴛʜ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴀᴅᴅ ɴᴇᴡ ᴍᴇᴍʙᴇʀꜱ
         caption=(
             f"{m.from_user.mention},\n\n"
             "ɪ ᴀᴍ ꜱɪᴍᴘʟᴇ ʙᴜᴛ ᴀᴅᴠᴀɴᴄᴇ ᴀᴜᴛᴏ ᴀᴘᴘʀᴏᴠᴇᴅ ʙᴏᴛ.\n\n"
@@ -92,7 +92,7 @@ async def start_message(c, m):
             [[
                 InlineKeyboardButton("⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆", url=f"https://telegram.me/Auto_Approved_Prime_Bot?startgroup=true&admin=invite_users"),
             ],[
-                InlineKeyboardButton("• ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ", url="https://telegram.me/Prime_Movies4U"),
+                InlineKeyboardButton("• ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ", url="https://telegram.me/PRIMECINEZONE"),
                 InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help_menu")
             ],[
                 InlineKeyboardButton("• ᴜᴩᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ •", url="https://telegram.me/Prime_Botz"),
