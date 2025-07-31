@@ -232,7 +232,7 @@ async def approve_new(client, m):
             # Inline keyboard with two buttons
             keyboard = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ", url=channel_link)],
+                    [InlineKeyboardButton("🔗 ɢᴏ ᴛᴏ ᴛʜᴀᴛ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ", url=channel_link)],
                     [InlineKeyboardButton("🤖 sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ", url=f"https://t.me/{bot_username}?start=start")]
                 ]
             )
