@@ -34,7 +34,7 @@ async def get_fsub(bot, message):
 
         # Send message with image ɪ ᴄᴀɴ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀᴘᴘʀᴏᴠᴇ ɴᴇᴡ ᴀꜱ ᴡᴇʟʟ ᴀꜱ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛꜱ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴏʀ ɢʀᴏᴜᴘꜱ.  ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ɢʀᴏᴜᴘꜱ ᴡɪᴛʜ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴀᴅᴅ ɴᴇᴡ ᴍᴇᴍʙᴇʀꜱ
         await message.reply_photo(
-            photo="https://i.postimg.cc/7Zpf9s1C/IMG-20250514-223544-954.jpg",
+            photo="https://i.postimg.cc/xdkd1h4m/IMG-20250715-153124-952.jpg",
             caption=(
                 "ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ʏᴏᴜ ᴍᴜꜱᴛ ꜰɪʀꜱᴛ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ.\n\n"
                 "ᴄʟɪᴄᴋ ᴏɴ **'✇ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ✇'** ʙᴜᴛᴛᴏɴ.\n"
@@ -238,7 +238,7 @@ async def approve_new(client, m):
             )
 
             # Send welcome image + message
-            photo_url = "https://i.postimg.cc/KzvWp2yQ/IMG-20250514-224151-977.jpg"
+            photo_url = "https://i.postimg.cc/JzXyD4vp/file-00000000387461f896ac672e8906d4c0.png"
             caption_text = (
                 f"👋 ʜᴇʏ {m.from_user.mention},\n\n"
                 f"✅ ʏᴏᴜʀ ʀᴇQᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ 『{m.chat.title}』 ʜᴀs ʙᴇᴇɴ ᴀᴄᴄᴇᴘᴛᴇᴅ!\n"
