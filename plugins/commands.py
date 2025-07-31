@@ -207,37 +207,57 @@ async def accept(client, message):
     except Exception as e:
         await msg.edit(f"An error occurred: {str(e)}")
 
+
 @Client.on_chat_join_request()
 async def approve_new(client, m):
-    if NEW_REQ_MODE == False:
+    if not NEW_REQ_MODE:
         return
     try:
         if not await db.is_user_exist(m.from_user.id):
             await db.add_user(m.from_user.id, m.from_user.first_name)
             await client.send_message(LOG_CHANNEL, LOG_TEXT.format(m.from_user.id, m.from_user.mention))
-        
+
+        # Approve the request
         await client.approve_chat_join_request(m.chat.id, m.from_user.id)
-        
+
         try:
             # Get the channel invite link
             chat_info = await client.get_chat(m.chat.id)
-            channel_link = chat_info.invite_link
-            
-            # Create a button with the channel link
+            channel_link = chat_info.invite_link or f"https://t.me/{chat_info.username}"
+
+            # Get bot username for start link
+            bot_info = await client.get_me()
+            bot_username = bot_info.username
+
+            # Inline keyboard with two buttons
             keyboard = InlineKeyboardMarkup(
-                [[InlineKeyboardButton("🔗 ɢᴏ ᴛᴏ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ/ɢʀᴏᴜᴘ", url=channel_link)]]
+                [
+                    [InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ", url=channel_link)],
+                    [InlineKeyboardButton("🤖 sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ", url=f"https://t.me/{bot_username}?start=start")]
+                ]
             )
-            
-            # Send the photo with the caption and button
-            photo_url = "https://i.postimg.cc/KzvWp2yQ/IMG-20250514-224151-977.jpg"  # Replace with your photo URL
+
+            # Send welcome image + message
+            photo_url = "https://i.postimg.cc/KzvWp2yQ/IMG-20250514-224151-977.jpg"
+            caption_text = (
+                f"👋 ʜᴇʏ {m.from_user.mention},\n\n"
+                f"✅ ʏᴏᴜʀ ʀᴇQᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ 『{m.chat.title}』 ʜᴀs ʙᴇᴇɴ ᴀᴄᴄᴇᴘᴛᴇᴅ!\n"
+                f"📢 ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴇɴᴛᴇʀ ᴛʜᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴇɴᴊᴏʏ ᴛʜᴇ ᴄᴏɴᴛᴇɴᴛ.\n\n"
+                f"🤖 ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ 'ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ' ᴛᴏ ᴀᴄᴛɪᴠᴀᴛᴇ ʏᴏᴜʀ ᴀᴄᴄᴇss."
+            )
+
             await client.send_photo(
                 m.from_user.id,
                 photo=photo_url,
-                caption=f"{m.from_user.mention},\n\n𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝗌𝗍 𝖳𝗈 𝖩𝗈𝗂𝗇 {m.chat.title} 𝖺𝗌 𝖻𝖾𝖾𝗇 𝖠𝖼𝖼𝖾𝗉𝗍𝖾𝖽.\n\nআপনি এখন চ্যানেলে যোগ দিতে পারেন।",
+                caption=caption_text,
                 reply_markup=keyboard
             )
+
         except Exception as e:
-            logger.error(f"Failed to send photo to user {m.from_user.id}: {e}")
+            logger.error(f"❌ Failed to send message to user {m.from_user.id}: {e}")
+
     except Exception as e:
-        logger.error(f"Error in approve_new: {e}")
+        logger.error(f"❌ Error in approve_new: {e}")
+
+
         
