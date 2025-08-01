@@ -86,7 +86,7 @@ async def start_message(c, m):
             "ɪ ᴀᴍ ꜱɪᴍᴘʟᴇ ʙᴜᴛ ᴀᴅᴠᴀɴᴄᴇ ᴀᴜᴛᴏ ᴀᴘᴘʀᴏᴠᴇᴅ ʙᴏᴛ.\n\n"
             "ɪ ᴄᴀɴ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀᴘᴘʀᴏᴠᴇ ɴᴇᴡ ᴀꜱ ᴡᴇʟʟ ᴀꜱ ᴘᴇɴᴅɪɴɢ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛꜱ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴏʀ ɢʀᴏᴜᴘꜱ.\n\n"
             "ᴊᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ɢʀᴏᴜᴘꜱ ᴡɪᴛʜ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴀᴅᴅ ɴᴇᴡ ᴍᴇᴍʙᴇʀs.\n\n"
-            "**<blockquote> 🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/Prime_Botz'>ᴘʀɪᴍᴇ ʙᴏᴛz 🔥</a></blockquote>**"
+            "**<blockquote> 🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ  <a href='https://t.me/PrimeXBots'>ᴘʀɪᴍᴇXʙᴏᴛꜱ</a></blockquote>**"
         ),
         reply_markup=InlineKeyboardMarkup(
             [[
@@ -229,11 +229,12 @@ async def approve_new(client, m):
             bot_info = await client.get_me()
             bot_username = bot_info.username
 
-            # Inline keyboard with two buttons
+# Inline keyboard with two buttons
             keyboard = InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("🔗 ɢᴏ ᴛᴏ ᴛʜᴀᴛ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ", url=channel_link)],
-                    [InlineKeyboardButton("🤖 sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ", url=f"https://t.me/{bot_username}?start=start")]
+                    [InlineKeyboardButton("🤖 sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ", url=f"https://t.me/{bot_username}?start=start")],
+                    [InlineKeyboardButton("✅ ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/PrimeXBots")]
                 ]
             )
 
@@ -241,9 +242,10 @@ async def approve_new(client, m):
             photo_url = "https://i.postimg.cc/JzXyD4vp/file-00000000387461f896ac672e8906d4c0.png"
             caption_text = (
                 f"👋 ʜᴇʏ {m.from_user.mention},\n\n"
-                f"✅ ʏᴏᴜʀ ʀᴇQᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ 『{m.chat.title}』 ʜᴀs ʙᴇᴇɴ ᴀᴄᴄᴇᴘᴛᴇᴅ!\n"
+                f"✅ ʏᴏᴜʀ ʀᴇQᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ 『{m.chat.title}』 ʜᴀs ʙᴇᴇɴ ᴀᴄᴄᴇᴘᴛᴇᴅ ʙʏ:<a href='https://t.me/PrimeXBots'>ᴘʀɪᴍᴇXʙᴏᴛꜱ</a>\n"
                 f"📢 ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴇɴᴛᴇʀ ᴛʜᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴇɴᴊᴏʏ ᴛʜᴇ ᴄᴏɴᴛᴇɴᴛ.\n\n"
                 f"🤖 ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ 'ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ' ᴛᴏ ᴀᴄᴛɪᴠᴀᴛᴇ ʏᴏᴜʀ ᴀᴄᴄᴇss."
+                f"📣 ᴀʟsᴏ, ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ ᴊᴏɪɴ ᴏᴜʀ <a href='https://t.me/PrimeXBots'>ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ</a> ꜰᴏʀ ʟᴀᴛᴇsᴛ ɴᴇᴡs ᴀɴᴅ ᴜᴘᴅᴀᴛᴇs!"
             )
 
             await client.send_photo(
